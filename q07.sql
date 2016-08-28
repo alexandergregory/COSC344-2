@@ -1,2 +1,2 @@
---Remove children older than 11 from the volunteer school database (no longer attend).
-DELETE FROM child WHERE bdate > TO_DATE('01-01-2006', 'DD-MM-YYYY');
+--Remove volunteer Jate Li as he has moved to another city
+DELETE FROM volunteer WHERE vid =(140394987);
