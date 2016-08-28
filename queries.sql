@@ -25,7 +25,7 @@ WHERE EXISTS
 --How many male students are there?
 SELECT COUNT(*) FROM child WHERE gender = 'M';
 --Remove volunteer Jate Li as he has moved to another city
-DELETE FROM volunteer WHERE vid =(140394987);
+DELETE FROM child WHERE vid =(140394987);
 --Get the child’s name, volunteer ID who teaches & special needs name
 SELECT child.lname, volunteer.vid, special_need.sn_name FROM child,volunteer,special_need WHERE child.vid = volunteer.vid AND special_need.child_id =child.cid;
 
