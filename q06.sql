@@ -1,2 +1,2 @@
 --How many male students are there?
-SELECT COUNT(*) FROM child WHERE gender = ‘M’;
+SELECT COUNT(*) FROM child WHERE gender = 'M';

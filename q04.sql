@@ -1,4 +1,4 @@
--- Find the names of all children who attend the same course.
+-- Finds the names of all the children who attend a robotics course.
 
 SELECT c.cid, c.fname, c.lname
 FROM  child c, attends a

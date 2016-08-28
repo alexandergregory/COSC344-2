@@ -182,6 +182,9 @@ INSERT INTO child VALUES
 ('2','Mark', 'J', 'Cullen', TO_DATE('10-03-2005', 'DD-MM-YYYY'),'29 Great King St Dunedin', 7, 'M', 'Social Services', 'O School', 12223987);
 INSERT INTO child VALUES
 ('3','Jason', 'R', 'Roberts', TO_DATE('14-05-2009', 'DD-MM-YYYY'),'10 Filleul St Dunedin', 8, 'M', 'Health Services', 'Hogwarts', 12223987);
+INSERT INTO child VALUES
+('4','Jeff', 'R', 'Oldman', TO_DATE('14-05-2007', 'DD-MM-YYYY'),'9 Filleul St Dunedin', 8, 'M', 'Health Services', 'Hogwarts',140394987);
+
 
 
 CREATE TABLE parent
@@ -196,7 +199,9 @@ CONSTRAINT child_id_cnst REFERENCES child(cid) DISABLE
 Insert INTO parent VALUES
 ('Richie', 'K', 'Ahn','0227850999', 1);
 Insert INTO parent VALUES
-('Richie', 'K', 'Ahn','0227850999', 1);
+('Anne', 'K', 'Ahn','0227857999', 2);
+Insert INTO parent VALUES
+('Sakura', 'J', 'Yamada','0217857999', 1);
 
 CREATE TABLE special_need
 (sn_name  VARCHAR2(15),
@@ -206,7 +211,7 @@ PRIMARY KEY(child_id, sn_name)
 );
 
 INSERT INTO special_need VALUES
-('Dyslexia', 'Be gentle', '1');
+('Dyslexia', 'Be gentle', 1);
 
 CREATE TABLE cared_for_by
 (
@@ -230,7 +235,9 @@ PRIMARY KEY(attends_child_id)
 );
 
 INSERT INTO attends VALUES
-(1, 1001);
+(1, 1000);
+INSERT INTO attends VALUES
+(2, 1000);
 
 
 
